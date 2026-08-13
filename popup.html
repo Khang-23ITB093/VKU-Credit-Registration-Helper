@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng ký học phần VKU</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="choices.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body { font-family: 'Segoe UI', Arial, 'Helvetica Neue', Helvetica, 'Tahoma', 'Verdana', 'Times New Roman', sans-serif; }
+    .choices__inner, .choices__list--multiple .choices__item { font-family: inherit; }
+    .error-message {
+      color: #d32f2f;
+      background: #ffebee;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 4px;
+      display: none;
+    }
+    .error-message.show {
+      display: block;
+    }
+    .loading {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Đăng ký học phần</h2>
+    
+    <div class="search-section">
+      <h3>Tìm kiếm học phần</h3>
+      <div id="loadingMessage" class="loading">Đang tải...</div>
+      <select id="choices-multiple-remove-button" multiple style="display: none;"></select>
+      <div class="button-group">
+        <button id="searchBtn" disabled>Tìm kiếm</button>
+        <button id="showAllCoursesBtn" disabled>Xem tất cả học phần</button>
+        <button id="resetBtn" class="reset-btn">Reset</button>
+      </div>
+    </div>
+
+    <div class="registered-courses">
+      <h3>Học phần đã đăng ký</h3>
+      <div id="registeredList"></div>
+    </div>
+
+    <div class="schedule-section">
+      <h3>Thời khóa biểu</h3>
+      <div id="schedule"></div>
+    </div>
+
+    <div id="errorMessage" class="error-message"></div>
+  </div>
+
+  <!-- Load scripts -->
+  <script src="choices.min.js"></script>
+  <script src="init.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html> 

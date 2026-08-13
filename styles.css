@@ -1,0 +1,203 @@
+/* General styles */
+body {
+  width: 800px;
+  min-height: 600px;
+  margin: 0;
+  padding: 20px;
+  font-family: 'Segoe UI', Arial, 'Helvetica Neue', Helvetica, 'Tahoma', 'Verdana', 'Times New Roman', sans-serif !important;
+}
+
+.container {
+  max-width: 100%;
+  padding: 10px;
+}
+
+/* Search section */
+.search-section {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f5f5f5;
+  border-radius: 5px;
+}
+
+.search-section input {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.search-section button {
+  padding: 8px 15px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Registered courses section */
+.registered-courses {
+  margin-bottom: 20px;
+}
+
+.course-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.course-info {
+  flex: 1;
+}
+
+.course-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Schedule section */
+.schedule-section {
+  margin-top: 20px;
+}
+
+.schedule-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.schedule-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.schedule-table th {
+  background: #f5f5f5;
+}
+
+.has-course {
+  color: white;
+  font-size: 12px;
+  padding: 5px;
+}
+
+/* VKU specific styles */
+.vku-search-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.vku-search-section input {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.vku-search-section button {
+  padding: 8px 15px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    min-height: auto;
+  }
+  
+  .course-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .course-actions {
+    margin-top: 10px;
+  }
+}
+
+h2 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+button {
+  margin: 5px 0;
+  padding: 6px 16px;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+button:hover {
+  background: #1565c0;
+}
+
+#timetable {
+  margin-top: 20px;
+}
+
+.choices__inner {
+  min-height: 44px;
+}
+
+.choices__list--multiple .choices__item {
+  background: #e3f2fd;
+  color: #1976d2;
+  border-radius: 2px;
+  margin: 2px 4px;
+  padding: 2px 8px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.reset-btn {
+  background: #f44336 !important;
+}
+
+.reset-btn:hover {
+  background: #d32f2f !important;
+}
+
+.error-message {
+  color: #d32f2f;
+  background: #ffebee;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+.error-message.show {
+  display: block;
+} 
