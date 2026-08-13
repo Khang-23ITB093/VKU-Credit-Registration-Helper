@@ -37,7 +37,7 @@ Extension Chrome hỗ trợ đăng ký tín chỉ cho sinh viên VKU, giúp quá
 
 1. Clone repository:
 ```bash
-git clone https://github.com/your-username/vku-credit-registration.git
+git clone https://github.com/your-username/vku-credit-registration.git](https://github.com/Khang-23ITB093/VKU-Credit-Registration-Helper.git
 ```
 
 2. Cài đặt extension trong Chrome:
